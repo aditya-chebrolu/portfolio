@@ -1,0 +1,117 @@
+[
+  {
+    "title": "AI Prompts",
+    "tags": ["ai", "learning"],
+    "url": "ai-prompts.md"
+  },
+  {
+    "title": "Threads",
+    "tags": ["java", "threads"],
+    "url": "java/async-programming/1-threads.md"
+  },
+  {
+    "title": "Runnable vs Callable",
+    "tags": ["java", "runnable", "callable"],
+    "url": "java/async-programming/2-runnable-vs-callable.md"
+  },
+  {
+    "title": "Future Interface",
+    "tags": ["java", "future"],
+    "url": "java/async-programming/3-future-interface.md"
+  },
+  {
+    "title": "CompletableFuture",
+    "tags": ["java", "completablefuture"],
+    "url": "java/async-programming/4-completable-future.md"
+  },
+  {
+    "title": "Fork/Join Pool",
+    "tags": ["java", "forkjoin"],
+    "url": "java/async-programming/5-fork-join-pool.md"
+  },
+  {
+    "title": "References",
+    "tags": ["java", "references"],
+    "url": "java/async-programming/references.md"
+  },
+  {
+    "title": "Brew Commands",
+    "tags": ["mac", "brew"],
+    "url": "mac/brew-commands.md"
+  },
+  {
+    "title": "Snippets",
+    "tags": ["css", "snippets"],
+    "url": "CSS/Snippets.md"
+  },
+  {
+    "title": "Things to Remember",
+    "tags": ["css", "tips"],
+    "url": "CSS/Things to Remember.md"
+  },
+  {
+    "title": "Development Tools",
+    "tags": ["development", "tools"],
+    "url": "development-tools.md"
+  },
+  {
+    "title": "Functional Interfaces Examples",
+    "tags": ["java", "functional programming"],
+    "url": "java/functionl-interfaces-examples.md"
+  },
+  {
+    "title": "Map vs Object",
+    "tags": ["javascript", "data structures"],
+    "url": "js/map-vs-obj.md"
+  },
+  {
+    "title": "Libraries used so far",
+    "tags": ["libraries"],
+    "url": "Libraries used so far.md"
+  },
+  {
+    "title": "Important Points",
+    "tags": ["redis", "key points"],
+    "url": "backend/redis/important-points.md"
+  },
+  {
+    "title": "Repository Links",
+    "tags": ["github", "resources"],
+    "url": "repo-links.md"
+  },
+  {
+    "title": "Beans",
+    "tags": ["spring boot", "beans"],
+    "url": "Spring Boot/Beans.md"
+  },
+  {
+    "title": "DB Mappings",
+    "tags": ["spring boot", "jpa", "database"],
+    "url": "Spring Boot/JPA/DB Mappings.md"
+  },
+  {
+    "title": "Cascade Operations",
+    "tags": ["spring boot", "jpa", "database"],
+    "url": "Spring Boot/JPA/Cascade Operations.md"
+  },
+  {
+    "title": "Super and Sub Classes",
+    "tags": ["java", "oop"],
+    "url": "java/super-and-sub-classes.md"
+  },
+  {
+    "title": "Useful Websites",
+    "tags": ["resources"],
+    "url": "useful-websites.md"
+  },
+  {
+    "title": "Webpack vs Vite",
+    "tags": ["web development", "build tools"],
+    "url": "Web Development/webpack-vs-vite.md"
+  },
+  {
+    "title": "Strategies for Efficient Asset Loading",
+    "tags": ["web development", "performance"],
+    "url": "Web Development/Strategies for Efficient Asset Loading.md"
+  }
+]

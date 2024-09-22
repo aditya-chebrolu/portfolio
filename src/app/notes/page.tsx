@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs";
 import React from "react";
-import Content from "./components/notes";
+import Content from "./components/content";
 
 export type DataObject = {
   title: string;
@@ -28,14 +28,15 @@ const NotesPage = async () => {
   const { notes, tags } = await getNotes();
 
   return (
-    <main className="grid md:grid-cols-[1fr_600px_1fr] grid-cols-[20px_1fr_20px] wrapper gap-y-8 min-h-screen mt-[80px]">
-      <h1 className="text-5xl font-bold select-none">
-        notes.
-        <span className="text-4xl align-middle">📝</span>
-      </h1>
-      <div className="border-b border-border col-span-full" />
-      <Content notes={notes} tags={tags} />
-    </main>
+    <div className="my-[80px]">
+      <main className="grid md:grid-cols-[1fr_600px_1fr] grid-cols-[20px_1fr_20px] wrapper gap-y-8">
+        <h1 className="text-5xl font-bold select-none">
+          notes.
+          <span className="text-4xl align-middle">📝</span>
+        </h1>
+        <Content notes={notes} tags={tags} />
+      </main>
+    </div>
   );
 };
 

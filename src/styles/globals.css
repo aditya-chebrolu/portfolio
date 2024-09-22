@@ -95,9 +95,24 @@ body {
     grid-column: 2/3;
   }
 
-  .tag {
-    &:hover ~ span {
-      @apply bg-green-400;
-    }
+  .tag-container > .tag {
+    @apply text-sm;
+    @apply cursor-pointer;
+    @apply transition-all;
+  }
+
+  .tag-container > .tag:hover ~ .tag:not(.selected) {
+    @apply text-gray-400;
+  }
+
+  .tag-container > .tag.selected {
+    @apply dark:text-yellow-400;
+    @apply text-yellow-500;
+  }
+
+  /* :has is not fully supported, so you may need an alternative approach */
+  /* Fallback custom rule for :has (Not widely supported yet) */
+  .tag-container > .tag:has(~ .tag:hover):not(.selected) {
+    @apply text-gray-400;
   }
 }

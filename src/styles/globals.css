@@ -8,24 +8,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-.text-balance {
-  text-wrap: balance;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* .wrapper > *:not(.col-span-full) {
-  grid-column: 2/3;
-} */
-
 @layer base {
   :root {
     --background: #fff;
@@ -53,6 +35,10 @@ body {
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    /* custom */
+    --page-width: 600px;
+    --inline-spacing: 20px;
+    --block-spacing: 80px;
   }
 
   .dark {
@@ -90,29 +76,35 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
 
-  .wrapper > * {
-    grid-column: 2/3;
-  }
-
+@layer components {
   .tag-container > .tag {
-    @apply text-sm;
-    @apply cursor-pointer;
-    @apply transition-all;
+    @apply cursor-pointer text-sm transition-all;
+
+    &.selected {
+      @apply text-blue-600 dark:text-yellow-400;
+    }
   }
 
-  .tag-container > .tag:hover ~ .tag:not(.selected) {
-    @apply text-gray-400;
+  /*  apply hover only on big screens */
+  @screen md {
+    .tag-container > .tag:hover ~ .tag:not(.selected) {
+      @apply text-gray-400;
+    }
+
+    .tag-container > .tag:has(~ .tag:hover):not(.selected) {
+      @apply text-gray-400;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 
-  .tag-container > .tag.selected {
-    @apply dark:text-yellow-400;
-    @apply text-yellow-500;
-  }
-
-  /* :has is not fully supported, so you may need an alternative approach */
-  /* Fallback custom rule for :has (Not widely supported yet) */
-  .tag-container > .tag:has(~ .tag:hover):not(.selected) {
-    @apply text-gray-400;
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }

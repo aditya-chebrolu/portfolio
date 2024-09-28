@@ -12,14 +12,16 @@ const AllTags = ({
 }) => {
   return (
     <div
-      className={`flex gap-x-2 text-sm overflow-x-auto no-scrollbar py-2 px-[calc((100vw-600px)/2)] bg-accent dark:bg-[#0F0F0F] border-y dark:border-[#343434] col-span-full tag-container`}
+      className={
+        "tag-container no-scrollbar col-span-full flex gap-x-2 overflow-x-auto border-y bg-accent px-[20px] py-2 text-sm dark:border-[#343434] dark:bg-[#0F0F0F] md:px-[calc((100vw-600px)/2)]"
+      }
     >
       {tags.map((tag) => (
         <span
           key={tag}
           className={cn(
-            "flex-shrink-0 tag",
-            selectedTags.has(tag) && "selected"
+            "tag flex-shrink-0",
+            selectedTags.has(tag) && "selected",
           )}
           onClick={toggleTag(tag)}
         >

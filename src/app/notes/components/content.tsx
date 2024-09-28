@@ -30,7 +30,7 @@ const Content = ({
       <input
         type="search"
         placeholder="Search Tags, Title, etc..."
-        className="border focus:outline-none px-2 p-1.5 rounded-lg bg-accent dark:bg-[#0F0F0F]"
+        className="rounded-lg border bg-accent p-1.5 px-2 focus:outline-none dark:bg-[#0F0F0F]"
         onChange={onSearch}
         value={search}
       />

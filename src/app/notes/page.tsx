@@ -2,6 +2,7 @@ import path from "path";
 import fs from "fs";
 import React from "react";
 import Content from "./components/content";
+import PageWrapper from "@/components/custom/page-wrapper";
 
 export type DataObject = {
   title: string;
@@ -15,7 +16,7 @@ const getNotes = async () => {
     "src",
     "public",
     "data",
-    "notes.json"
+    "notes.json",
   );
   const fileContents = fs.readFileSync(filePath, "utf8");
   const arr = JSON.parse(fileContents) as DataObject[];
@@ -28,15 +29,13 @@ const NotesPage = async () => {
   const { notes, tags } = await getNotes();
 
   return (
-    <div className="my-[80px]">
-      <main className="grid md:grid-cols-[1fr_600px_1fr] grid-cols-[20px_1fr_20px] wrapper gap-y-8">
-        <h1 className="text-5xl font-bold select-none">
-          notes.
-          <span className="text-4xl align-middle">📝</span>
-        </h1>
-        <Content notes={notes} tags={tags} />
-      </main>
-    </div>
+    <PageWrapper>
+      <h1 className="select-none text-5xl font-bold">
+        notes.
+        <span className="align-middle text-4xl">📝</span>
+      </h1>
+      <Content notes={notes} tags={tags} />
+    </PageWrapper>
   );
 };
 

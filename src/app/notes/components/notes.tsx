@@ -12,24 +12,24 @@ const Notes = ({
   toggleTag: (tag: string) => () => void;
 }) => {
   return (
-    <div className={"flex flex-col gap-y-2"}>
+    <div className={"flex flex-col gap-y-4"}>
       {notes.map((note, idx) => (
         <div key={note.url} className="grid grid-cols-[2ch_1fr] gap-x-2">
           <div className="w-[2ch]">{idx + 1}.</div>
           <Link
             href={`https://github.com/aditya-chebrolu/notes/blob/master/${note.url}`}
             target="_blank"
-            className="underline justify-self-start text-sm"
+            className="justify-self-start text-sm underline"
           >
             {note.title}
           </Link>
-          <div className="flex gap-x-2 col-[2/3] row-[2/3] text-sm tag-container">
+          <div className="tag-container col-[2/3] row-[2/3] flex gap-x-2 text-sm">
             {note.tags.map((tag) => (
               <div
                 key={tag}
                 className={cn(
                   "tag text-gray-400",
-                  selectedTags.has(tag) && "selected"
+                  selectedTags.has(tag) && "selected",
                 )}
                 onClick={toggleTag(tag)}
               >

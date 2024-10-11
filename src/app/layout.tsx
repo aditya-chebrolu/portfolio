@@ -8,7 +8,7 @@ const inter = Inter({
   variable: "--inter"
 });
 
-export const sourceSans = Source_Sans_3({
+const sourceSans = Source_Sans_3({
   subsets: ["latin"],
   weight: ["400", "700", "900"],
   variable: "--font-sans"

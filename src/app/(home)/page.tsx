@@ -4,7 +4,7 @@ import WorkExperience from "./components/experience";
 import Title from "@/components/custom/title";
 import Skills from "./components/skills";
 import Markdown from "react-markdown";
-import { data } from "@/public/data/home";
+import { data } from "@/data/home";
 
 export default function Home() {
   return (

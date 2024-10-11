@@ -1,22 +1,22 @@
-import astro from "@public/svgs/tech/light/astro.svg";
-// import aws from "@public/svgs/tech/light/aws.svg";
-import azure from "@public/svgs/tech/light/azure.svg";
-import bash from "@public/svgs/tech/light/bash.svg";
-import css from "@public/svgs/tech/light/css.svg";
-import docker from "@public/svgs/tech/light/docker.svg";
-import html from "@public/svgs/tech/light/html.svg";
-import java from "@public/svgs/tech/light/java.svg";
-import javascript from "@public/svgs/tech/light/js.svg";
-import kubernetes from "@public/svgs/tech/light/kubernetes.svg";
-import mongodb from "@public/svgs/tech/light/mongodb.svg";
-import nestjs from "@public/svgs/tech/light/nestjs.svg";
-import nextjs from "@public/svgs/tech/light/nextjs.svg";
-import nodejs from "@public/svgs/tech/light/nodejs.svg";
-import reactjs from "@public/svgs/tech/light/reactjs.svg";
-import redis from "@public/svgs/tech/light/redis.svg";
-import spring from "@public/svgs/tech/light/spring.svg";
-import tailwind from "@public/svgs/tech/light/tailwind.svg";
-import typescript from "@public/svgs/tech/light/typescript.svg";
+import astro from "@svgs/tech/light/astro.svg";
+// import aws from "@svgs/tech/light/aws.svg";
+import azure from "@svgs/tech/light/azure.svg";
+import bash from "@svgs/tech/light/bash.svg";
+import css from "@svgs/tech/light/css.svg";
+import docker from "@svgs/tech/light/docker.svg";
+import html from "@svgs/tech/light/html.svg";
+import java from "@svgs/tech/light/java.svg";
+import javascript from "@svgs/tech/light/js.svg";
+import kubernetes from "@svgs/tech/light/kubernetes.svg";
+import mongodb from "@svgs/tech/light/mongodb.svg";
+import nestjs from "@svgs/tech/light/nestjs.svg";
+import nextjs from "@svgs/tech/light/nextjs.svg";
+import nodejs from "@svgs/tech/light/nodejs.svg";
+import reactjs from "@svgs/tech/light/reactjs.svg";
+import redis from "@svgs/tech/light/redis.svg";
+import spring from "@svgs/tech/light/spring.svg";
+import tailwind from "@svgs/tech/light/tailwind.svg";
+import typescript from "@svgs/tech/light/typescript.svg";
 
 export const icons = {
   // Programming Languages

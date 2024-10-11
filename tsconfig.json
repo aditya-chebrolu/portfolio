@@ -24,7 +24,7 @@
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@styles/*": ["./src/styles/*"],
-      "@public/*":["./src/public/*"],
+      "@svgs/*":["./src/svgs/*"],
       "@fonts/*":["./src/public/fonts/*"],
       "@providers/*":["./src/providers/*"],
     }

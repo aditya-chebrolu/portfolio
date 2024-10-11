@@ -13,7 +13,7 @@ export type DataObject = {
 };
 
 const getNotes = async () => {
-  const filePath = path.join(process.cwd(), "src", "public", "data", "notes.json");
+  const filePath = path.join(process.cwd(), "src", "data", "notes.json");
   const fileContents = fs.readFileSync(filePath, "utf8");
   const arr = JSON.parse(fileContents) as DataObject[];
   const allTags = arr.map(note => note.mainTag);

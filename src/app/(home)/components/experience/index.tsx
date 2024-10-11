@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "@public/svgs/bajaj.svg";
+import Icon from "@svgs/bajaj.svg";
 import Section from "@/components/custom/section";
 
 const experience = [

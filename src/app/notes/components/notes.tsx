@@ -1,16 +1,7 @@
 import Link from "next/link";
 import { DataObject } from "../page";
-import { cn } from "@/lib/utils";
 
-const Notes = ({
-  notes,
-  selectedTags,
-  toggleTag,
-}: {
-  notes: DataObject[];
-  selectedTags: Set<string>;
-  toggleTag: (tag: string) => () => void;
-}) => {
+const Notes = ({ notes }: { notes: DataObject[]; selectedTags: Set<string>; toggleTag: (tag: string) => () => void }) => {
   return (
     <div className={"flex flex-col gap-y-4"}>
       {notes.map((note, idx) => (
@@ -23,7 +14,7 @@ const Notes = ({
           >
             {note.title}
           </Link>
-          <div className="tag-container col-[2/3] row-[2/3] flex gap-x-2 text-sm">
+          {/* <div className="tag-container col-[2/3] row-[2/3] flex gap-x-2 text-sm">
             {note.tags.map((tag) => (
               <div
                 key={tag}
@@ -36,7 +27,7 @@ const Notes = ({
                 #{tag}
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       ))}
     </div>

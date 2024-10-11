@@ -1,117 +1,140 @@
 [
   {
     "title": "AI | Prompts",
-    "tags": ["ai", "learning"],
-    "url": "ai-prompts.md"
+    "tags": ["ai"],
+    "url": "ai-prompts.md",
+    "mainTag": "ai"
   },
   {
     "title": "Java | Threads",
     "tags": ["java", "threads"],
-    "url": "java/async-programming/1-threads.md"
+    "url": "java/async-programming/1-threads.md",
+    "mainTag": "java"
   },
   {
     "title": "Java | Runnable vs Callable",
     "tags": ["java", "runnable", "callable"],
-    "url": "java/async-programming/2-runnable-vs-callable.md"
+    "url": "java/async-programming/2-runnable-vs-callable.md",
+    "mainTag": "java"
   },
   {
     "title": "Java | Future Interface",
     "tags": ["java", "future"],
-    "url": "java/async-programming/3-future-interface.md"
+    "url": "java/async-programming/3-future-interface.md",
+    "mainTag": "java"
   },
   {
     "title": "Java | CompletableFuture",
     "tags": ["java", "completablefuture"],
-    "url": "java/async-programming/4-completable-future.md"
+    "url": "java/async-programming/4-completable-future.md",
+    "mainTag": "java"
   },
   {
     "title": "Java | Fork/Join Pool",
     "tags": ["java", "forkjoin"],
-    "url": "java/async-programming/5-fork-join-pool.md"
+    "url": "java/async-programming/5-fork-join-pool.md",
+    "mainTag": "java"
   },
   {
     "title": "Java | References",
     "tags": ["java", "references"],
-    "url": "java/async-programming/references.md"
+    "url": "java/async-programming/references.md",
+    "mainTag": "java"
   },
   {
     "title": "Mac | Brew Commands",
     "tags": ["mac", "brew"],
-    "url": "mac/brew-commands.md"
+    "url": "mac/brew-commands.md",
+    "mainTag": "mac"
   },
   {
     "title": "CSS | Snippets",
     "tags": ["css", "snippets"],
-    "url": "CSS/Snippets.md"
+    "url": "CSS/Snippets.md",
+    "mainTag": "css"
   },
   {
     "title": "CSS | Things to Remember",
     "tags": ["css", "tips"],
-    "url": "CSS/Things to Remember.md"
+    "url": "CSS/Things to Remember.md",
+    "mainTag": "css"
   },
   {
     "title": "Development | Tools",
     "tags": ["development", "tools"],
-    "url": "development-tools.md"
+    "url": "development-tools.md",
+    "mainTag": "development"
   },
   {
     "title": "Java | Functional Interfaces Examples",
     "tags": ["java", "functional programming"],
-    "url": "java/functionl-interfaces-examples.md"
+    "url": "java/functionl-interfaces-examples.md",
+    "mainTag": "java"
   },
   {
     "title": "JavaScript | Map vs Object",
     "tags": ["javascript", "data structures"],
-    "url": "js/map-vs-obj.md"
+    "url": "js/map-vs-obj.md",
+    "mainTag": "javascript"
   },
   {
     "title": "Libraries | Used So Far",
     "tags": ["libraries"],
-    "url": "Libraries used so far.md"
+    "url": "Libraries used so far.md",
+    "mainTag": "libraries"
   },
   {
     "title": "Redis | Important Points",
     "tags": ["redis", "key points"],
-    "url": "backend/redis/important-points.md"
+    "url": "backend/redis/important-points.md",
+    "mainTag": "backend"
   },
   {
     "title": "GitHub | Repository Links",
     "tags": ["github", "resources"],
-    "url": "repo-links.md"
+    "url": "repo-links.md",
+    "mainTag": "github"
   },
   {
     "title": "Spring Boot | Beans",
     "tags": ["spring boot", "beans"],
-    "url": "Spring Boot/Beans.md"
+    "url": "Spring Boot/Beans.md",
+    "mainTag": "spring boot"
   },
   {
     "title": "Spring Boot | DB Mappings",
     "tags": ["spring boot", "jpa", "database"],
-    "url": "Spring Boot/JPA/DB Mappings.md"
+    "url": "Spring Boot/JPA/DB Mappings.md",
+    "mainTag": "spring boot"
   },
   {
     "title": "Spring Boot | Cascade Operations",
     "tags": ["spring boot", "jpa", "database"],
-    "url": "Spring Boot/JPA/Cascade Operations.md"
+    "url": "Spring Boot/JPA/Cascade Operations.md",
+    "mainTag": "spring boot"
   },
   {
     "title": "Java | Super and Sub Classes",
     "tags": ["java", "oop"],
-    "url": "java/super-and-sub-classes.md"
+    "url": "java/super-and-sub-classes.md",
+    "mainTag": "java"
   },
   {
     "title": "Resources | Useful Websites",
     "tags": ["resources"],
-    "url": "useful-websites.md"
+    "url": "useful-websites.md",
+    "mainTag": "resources"
   },
   {
     "title": "Web Development | Webpack vs Vite",
     "tags": ["web development", "build tools"],
-    "url": "Web Development/webpack-vs-vite.md"
+    "url": "Web Development/webpack-vs-vite.md",
+    "mainTag": "web development"
   },
   {
     "title": "Web Development | Strategies for Efficient Asset Loading",
     "tags": ["web development", "performance"],
-    "url": "Web Development/Strategies for Efficient Asset Loading.md"
+    "url": "Web Development/Strategies for Efficient Asset Loading.md",
+    "mainTag": "web development"
   }
 ]

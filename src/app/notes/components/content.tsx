@@ -5,24 +5,12 @@ import AllTags from "./all-tags";
 import Notes from "./notes";
 import { useTheme } from "next-themes";
 
-const Content = ({
-  notes: inputNotes,
-  tags,
-}: {
-  notes: DataObject[];
-  tags: string[];
-}) => {
+const Content = ({ notes: inputNotes, tags }: { notes: DataObject[]; tags: string[] }) => {
   const { theme, setTheme } = useTheme();
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
-  const {
-    selectedNotes: notes,
-    toggleTag,
-    selectedTags,
-    onSearch,
-    search,
-  } = useSelectedNotes(inputNotes);
+  const { selectedNotes: notes, toggleTag, selectedTags, onSearch, search } = useSelectedNotes(inputNotes);
 
   return (
     <>

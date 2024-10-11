@@ -5,6 +5,7 @@ import Title from "@/components/custom/title";
 import Skills from "./components/skills";
 import Markdown from "react-markdown";
 import { data } from "@/data/home";
+import Contact from "./components/contact";
 
 export default function Home() {
   return (
@@ -17,21 +18,14 @@ export default function Home() {
       </div> */}
       <WorkExperience />
       <Skills />
-      <div className="flex flex-col gap-y-32 py-16">
-        <div className="flex flex-col gap-4">
-          <div className="self-center rounded-lg bg-foreground px-4 py-[4px] text-sm/tight text-background">notes</div>
-          <h2 className="text-center text-4xl/tight font-bold">Checkout my notes.</h2>
-          <Markdown className="text-center text-muted-foreground [&_a]:text-foreground [&_a]:underline">{data.notes}</Markdown>
-        </div>
-        <div className="flex flex-col gap-4">
-          <div className="self-center rounded-lg bg-foreground px-4 py-[4px] text-sm/tight text-background">resume</div>
-          <h2 className="text-center text-4xl/tight font-bold">
-            <a href="resume.pdf" target="_blank">
-              Checkout my resume.
-            </a>
-          </h2>
-        </div>
+      <div className="h-10" />
+      <div className="flex flex-col gap-4">
+        <div className="self-center rounded-lg bg-foreground px-4 py-[4px] text-sm/tight text-background">notes</div>
+        <h2 className="text-center text-4xl/tight font-bold">Checkout my notes.</h2>
+        <Markdown className="text-center text-muted-foreground [&_a]:text-foreground [&_a]:underline">{data.notes}</Markdown>
       </div>
+      <div className="h-10" />
+      <Contact />
     </PageWrapper>
   );
 }

@@ -1,4 +1,5 @@
 import astro from "@svgs/tech/light/astro.svg";
+import astro_dark from "@svgs/tech/dark/astro.svg";
 // import aws from "@svgs/tech/light/aws.svg";
 import azure from "@svgs/tech/light/azure.svg";
 import bash from "@svgs/tech/light/bash.svg";
@@ -11,6 +12,7 @@ import kubernetes from "@svgs/tech/light/kubernetes.svg";
 import mongodb from "@svgs/tech/light/mongodb.svg";
 import nestjs from "@svgs/tech/light/nestjs.svg";
 import nextjs from "@svgs/tech/light/nextjs.svg";
+import nextjs_dark from "@svgs/tech/dark/nextjs.svg";
 import nodejs from "@svgs/tech/light/nodejs.svg";
 import reactjs from "@svgs/tech/light/reactjs.svg";
 import redis from "@svgs/tech/light/redis.svg";
@@ -46,14 +48,17 @@ export const icons = {
   // Frameworks and Libraries
   reactjs: {
     Icon: reactjs,
+    DarkIcon: reactjs,
     name: "React"
   },
   nextjs: {
     Icon: nextjs,
+    DarkIcon: nextjs_dark,
     name: "Next.js"
   },
   astro: {
     Icon: astro,
+    DarkIcon: astro_dark,
     name: "Astro"
   },
   nestjs: {
@@ -118,4 +123,4 @@ export const devOps = (["docker", "kubernetes", "azure"] as (keyof typeof icons)
 
 export const shellScripting = (["bash"] as (keyof typeof icons)[]).map(k => icons[k]);
 
-export const technologies = Object.values(icons);
+export const technologies = Object.values(icons) as { Icon: React.ElementType; DarkIcon?: React.ElementType; name: string }[];

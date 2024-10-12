@@ -12,10 +12,11 @@ export default function Home() {
     <PageWrapper>
       <Title>hi, i&apos;m aditya 👋</Title>
       {/* <div className="col-span-full flex min-h-[1px] w-full justify-center gap-x-10 border-y bg-accent px-[20px] py-2 text-sm dark:border-[#343434] dark:bg-[#0F0F0F] md:px-[calc((100vw-600px)/2)]">
-        <div>github</div>
-        <div>linkedin</div>
-        <div>mail</div>
+        <In height={25} width={25} className="fill-black dark:fill-white" />
+        <Github height={25} width={25} className="fill-black dark:fill-white" />
+        <Mail height={25} width={25} className="fill-black dark:fill-white" />
       </div> */}
+      <div className="col-span-full h-[1px] bg-[#343434] bg-border" />
       <WorkExperience />
       <Skills />
       <div className="h-10" />

@@ -36,7 +36,7 @@ const ExperiencePoints = ({ data }: { data: ExperienceDataType }) => {
         {data.points.map((point, index) => (
           <div
             key={index}
-            className="point text-md font-medium text-gray-800 dark:text-gray-400"
+            className="point text-md text-gray-800 dark:text-gray-400 md:font-medium"
             dangerouslySetInnerHTML={{ __html: point }}
           />
         ))}

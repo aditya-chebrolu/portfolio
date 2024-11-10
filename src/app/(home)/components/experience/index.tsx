@@ -32,9 +32,11 @@ const experience = [
 const WorkExperience = () => {
   return (
     <Section title="work experience">
-      {experience.map(exp => (
-        <ExperienceStrip key={exp.company} {...exp} />
-      ))}
+      <div className="flex flex-col gap-y-6">
+        {experience.map(exp => (
+          <ExperienceStrip key={exp.company} {...exp} />
+        ))}
+      </div>
     </Section>
   );
 };

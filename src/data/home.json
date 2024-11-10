@@ -1,0 +1,16 @@
+{
+  "experience": [
+    {
+      "company": "Bajaj Finserv Health Ltd.",
+      "role": "Software Engineer",
+      "startDate": "2022-01-01",
+      "endDate": "2024-11-22",
+      "url": "/experience/bfhl"
+    }
+  ],
+  "contact": {
+    "linkedin": "https://www.linkedin.com/in/adityachebrolu",
+    "github": "https://github.com/aditya-chebrolu",
+    "mail": "mailto:thisisadityachebrolu@gmail.com"
+  }
+}

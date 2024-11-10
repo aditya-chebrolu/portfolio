@@ -1,0 +1,39 @@
+{
+  "bfhl": {
+    "logo": "bajaj",
+    "company": "Bajaj Finserv Health",
+    "shortName": "Bajaj Finserv Health",
+    "description": "During my time at Bajaj Finserv Health, I've worked extensively with <span class=\"highlight\">React</span> and <span class=\"highlight\">Next.js</span> for frontend, <span class=\"highlight\">NestJS</span> for backend, and <span class=\"highlight\">TypeScript</span> as the primary language. I've also gained hands-on experience with <span class=\"highlight\">Docker</span>, <span class=\"highlight\">Kubernetes</span>, and <span class=\"highlight\">ELK</span> stack.",
+    "points": [
+      "1. Created multiple <span class=\"highlight yellow\">reusable components</span> to improve development efficiency.",
+      "2. Worked on multiple <span class=\"highlight yellow\">backend microservices</span>.",
+      "3. Contributed to the migration from monolithic architecture to <span class=\"highlight yellow\">micro frontend</span>.",
+      "4. Used <span class=\"highlight pink\">Strapi</span> for dynamic web content, enabling content changes on the site without the need for specific releases.",
+      "5. Designed and revamped pages from scratch, improving <span class=\"highlight blue\">user experience</span>.",
+      "6. Created robust and well-documented <span class=\"highlight yellow\">APIs</span>.",
+      "7. Utilized <span class=\"highlight pink\">ELK stack</span> for logging and efficient issue identification.",
+      "8. Gained proficiency in working with <span class=\"highlight pink\">MongoDB</span> for data management.",
+      "9. Acquired experience with <span class=\"highlight pink\">Docker</span>, <span class=\"highlight pink\">Kubernetes</span>, and <span class=\"highlight pink\">CI/CD pipelines</span>.",
+      "10. Developed and implemented effective <span class=\"highlight yellow\">caching strategies</span>.",
+      "11. Refactored existing codebase to improve <span class=\"highlight blue\">performance</span> and <span class=\"highlight blue\">maintainability</span>.",
+      "12. Applied <span class=\"highlight yellow\">defensive coding</span> practices to enhance system reliability.",
+      "13. Implemented <span class=\"highlight yellow\">defensive CSS</span> techniques for consistent UI across platforms.",
+      "14. Actively participated in <span class=\"highlight blue\">technical discussions</span> and architecture planning.",
+      "15. Conducted thorough <span class=\"highlight blue\">code reviews</span> to maintain code quality.",
+      "16. <span class=\"highlight blue\">Mentored</span> junior team members.",
+      "17. <span class=\"highlight blue\">Collaborated with product managers</span> to implement new features.",
+      "18. Improved my <span class=\"highlight yellow\">debugging skills</span> from using <code class=\"code\">console.log</code> to utilizing the debugger, but I still prefer <code class=\"code\">console.log</code> 😛.",
+      "19. Developed and maintained <span class=\"highlight yellow\">cron jobs</span> for automated task scheduling.",
+      "20. Written <span class=\"highlight blue\">clean</span>, <span class=\"highlight blue\">efficient</span>, and <span class=\"highlight blue\">maintainable</span> code.",
+      "21. Written <span class=\"highlight blue\">test cases 😵</span>.",
+      "22. <span class=\"highlight blue\">Fun 🎉</span>."
+    ]
+  },
+  "amgen": {
+    "logo": "amgen",
+    "company": "Amgen",
+    "shortName": "Amgen",
+    "description": "At Amgen, I was a <span class=\"highlight\">React</span> developer, working on the <span class=\"highlight\">Amgen.com</span> website.",
+    "points": []
+  }
+}

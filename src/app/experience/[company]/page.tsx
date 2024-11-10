@@ -1,32 +1,47 @@
+"use client";
+
 import React from "react";
 import PageWrapper from "@/components/custom/page-wrapper";
 import Title from "@/components/custom/title";
-const data = {
-  company: "Bajaj Finserv Health"
-};
+// import { companyLogos } from "@/utils/company-logo";
+import experience from "@/data/experience.json";
+import { useParams } from "next/navigation";
+type ExperienceDataType = (typeof experience)[keyof typeof experience];
 
 const ExperiencePage = () => {
+  const { company } = useParams();
+  const data = experience[company as keyof typeof experience];
+  // const Icon = companyLogos[data.logo as keyof typeof companyLogos];
+
   return (
     <PageWrapper>
-      <Title>
-        <span className="text-muted-foreground">Experience @ </span>
-        <span className="dark:text-yellow-400">{data.company}</span>
-      </Title>
       <div>
-        <h2>tech i have extensive experience with</h2>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas suscipit assumenda possimus incidunt debitis eum,
-          ducimus explicabo! Soluta, dolor temporibus? Repudiandae fugit suscipit reiciendis eum, similique vero cum quidem
-          soluta.
-        </div>
+        <div className="text-muted-foreground dark:text-gray-400">My Experience @</div>
+        <Title className="text-black dark:text-white">{data.company}</Title>
       </div>
-      <div>
-        <h2>tech i have been exposed to</h2>
-      </div>
-      <div>
-        <h2>At {data.company}, I have...</h2>
-      </div>
+      <div
+        className="text-md text-pretty border-l-4 pl-2 text-muted-foreground dark:text-gray-400 [&>_.highlight]:text-black dark:[&>_.highlight]:text-white"
+        dangerouslySetInnerHTML={{ __html: data.description }}
+      />
+      <ExperiencePoints data={data} />
     </PageWrapper>
+  );
+};
+
+const ExperiencePoints = ({ data }: { data: ExperienceDataType }) => {
+  return (
+    <div className="flex flex-col gap-3">
+      <div className="text-2xl font-semibold">At {data.shortName}, I have...</div>
+      <div className="flex flex-col gap-2">
+        {data.points.map((point, index) => (
+          <div
+            key={index}
+            className="point text-md font-medium text-gray-800 dark:text-gray-400"
+            dangerouslySetInnerHTML={{ __html: point }}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
 

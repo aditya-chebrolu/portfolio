@@ -90,6 +90,71 @@ body {
     }
   }
 
+  .point {
+    > .highlight {
+      position: relative;
+
+      &:first-child {
+        padding-left: 0px;
+      }
+
+      z-index: 1;
+
+      &:after {
+        content: "";
+        height: 6px;
+        width: 100%;
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        bottom: 1px;
+        z-index: -1;
+
+        @apply dark:hidden;
+      }
+
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+
+    > .yellow {
+      @apply dark:text-[#ffdf80];
+      &:after {
+        background-color: #ffdf80;
+      }
+    }
+
+    > .pink {
+      @apply dark:text-[#fdbbc8];
+      &:after {
+        background-color: #fdbbc8;
+      }
+    }
+
+    > .blue {
+      @apply dark:text-[#c2e6fc];
+      &:after {
+        background-color: #c2e6fc;
+      }
+    }
+
+    > .code {
+      /* background-color: #e5e4e2; */
+      /* border: solid 1px #d5d3d1; */
+      border: solid 1px;
+      @apply border-gray-300 bg-gray-200 text-gray-800 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200;
+      position: relative;
+      font-size: 14px;
+      border-radius: 6px;
+      z-index: 1;
+      vertical-align: 1px;
+      padding: 2px 4px;
+    }
+  }
+
   /*  apply hover only on big screens */
   @screen md {
     .tag-container > .tag:hover ~ .tag:not(.selected) {

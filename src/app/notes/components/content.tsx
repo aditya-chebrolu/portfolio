@@ -3,13 +3,8 @@ import { DataObject } from "../page";
 import useSelectedNotes from "../hooks/use-selected-notes";
 import AllTags from "./all-tags";
 import Notes from "./notes";
-import { useTheme } from "next-themes";
 
 const Content = ({ notes: inputNotes, tags }: { notes: DataObject[]; tags: string[] }) => {
-  const { theme, setTheme } = useTheme();
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
   const { selectedNotes: notes, toggleTag, selectedTags, onSearch, search } = useSelectedNotes(inputNotes);
 
   return (
@@ -23,7 +18,6 @@ const Content = ({ notes: inputNotes, tags }: { notes: DataObject[]; tags: strin
         value={search}
       />
       <Notes notes={notes} selectedTags={selectedTags} toggleTag={toggleTag} />
-      <button onClick={toggleTheme}>Toggle Theme</button>
     </>
   );
 };

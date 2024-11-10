@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Source_Sans_3 } from "next/font/google";
 import "../styles/globals.css";
 import { ThemeProvider } from "@providers/theme-provider";
+import ToggleThemeButton from "@/components/custom/toggle-theme-button";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${sourceSans.variable} no-scrollbar antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
+          <ToggleThemeButton />
         </ThemeProvider>
       </body>
     </html>

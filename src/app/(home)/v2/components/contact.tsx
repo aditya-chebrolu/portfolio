@@ -4,7 +4,6 @@ import Github from "@svgs/social/github.svg";
 import Mail from "@svgs/social/mail.svg";
 import Link from "next/link";
 import data from "@/data/home.json";
-import Section from "@/components/custom/section";
 
 const Contact = () => {
   return (

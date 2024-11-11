@@ -8,7 +8,7 @@ import Skills from "./components/skills";
 export default function HomeV2() {
   return (
     <PageWrapper>
-      <Title>hi!&nbsp; i&apos;m aditya &nbsp;&nbsp;👋</Title>
+      <Title>hi! i&apos;m aditya &nbsp;👋</Title>
       <Experience />
       <Skills />
       <Contact />
@@ -19,7 +19,6 @@ export default function HomeV2() {
       >
         resume
       </a>
-      {/* <div className="full col-span-full border-t border-white"></div> */}
     </PageWrapper>
   );
 }

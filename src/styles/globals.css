@@ -40,7 +40,7 @@ body {
     /* custom */
     --page-width: 600px;
     --inline-spacing: 20px;
-    --block-spacing: 80px;
+    --block-spacing: 25px;
   }
 
   .dark {
@@ -69,6 +69,12 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+  }
+
+  @screen md {
+    :root {
+      --block-spacing: 80px;
+    }
   }
 }
 

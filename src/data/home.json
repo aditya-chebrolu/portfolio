@@ -1,11 +1,21 @@
 {
   "experience": [
     {
-      "company": "Bajaj Finserv Health Ltd.",
+      "company": "Amgen",
+      "role": "Software Engineer",
+      "startDate": "2024-12-05",
+      "url": "/experience/amgen",
+      "logo": "amgen",
+      "display": true
+    },
+    {
+      "company": "Bajaj Finserv Health",
       "role": "Software Engineer",
       "startDate": "2022-01-01",
       "endDate": "2024-11-22",
-      "url": "/experience/bfhl"
+      "url": "/experience/bfhl",
+      "logo": "bajaj",
+      "display": true
     }
   ],
   "contact": {

@@ -4,18 +4,18 @@ import In from "@svgs/social/in.svg";
 import Github from "@svgs/social/github.svg";
 import Mail from "@svgs/social/mail.svg";
 import Link from "next/link";
-import data from "@/data/home.json";
+import data from "@/data/home/contact.json";
 
 const Contact = () => {
   return (
     <div className="flex justify-center gap-6 [&_svg:hover]:scale-150 [&_svg]:h-[25px] [&_svg]:w-[25px] [&_svg]:fill-black [&_svg]:transition-transform [&_svg]:duration-100 dark:[&_svg]:fill-white">
-      <Link href={data.contact.linkedin}>
+      <Link href={data.linkedin}>
         <In />
       </Link>
-      <Link href={data.contact.github}>
+      <Link href={data.github}>
         <Github />
       </Link>
-      <Link href={data.contact.mail}>
+      <Link href={data.mail}>
         <Mail />
       </Link>
     </div>

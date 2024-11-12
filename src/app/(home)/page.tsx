@@ -1,16 +1,17 @@
 import PageWrapper from "@/components/page-wrapper";
-import data from "@data/home.json";
+import meta from "@data/home/meta.json";
 import Title from "@/components/title";
 import Contact from "./components/contact";
 import Experience from "./components/experience";
 import Skills from "./components/skills";
 import Spacer from "@/components/spacer";
 import { Metadata } from "next";
+import AboutMe from "./components/about-me";
 
 export const metadata: Metadata = {
-  title: data.meta.title,
-  description: data.meta.description,
-  keywords: data.meta.keywords,
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
   authors: [{ name: "Aditya Chebrolu" }],
   robots: { index: true, follow: true },
   viewport: {
@@ -20,8 +21,8 @@ export const metadata: Metadata = {
     userScalable: false
   },
   openGraph: {
-    title: data.meta.title,
-    description: data.meta.description,
+    title: meta.title,
+    description: meta.description,
     type: "website"
   },
   appleWebApp: {
@@ -38,6 +39,7 @@ export default function Home() {
   return (
     <PageWrapper>
       <Title>hi! i&apos;m aditya &nbsp;👋</Title>
+      <AboutMe />
       <Experience />
       <Skills />
       <Spacer h={50} />

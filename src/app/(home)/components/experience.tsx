@@ -1,5 +1,5 @@
 "use client";
-import data from "@/data/home.json";
+import data from "@/data/home/experience.json";
 import Link from "next/link";
 import LinkIcon from "@svgs/link.svg";
 import Section from "@/components/section";
@@ -8,7 +8,7 @@ import { companyLogos } from "@/utils/icons";
 const Experience = () => {
   return (
     <Section title="Experience">
-      {data.experience.map(exp => {
+      {data.map(exp => {
         if (!exp.display) return null;
         const Icon = companyLogos[exp.logo as keyof typeof companyLogos];
         return (

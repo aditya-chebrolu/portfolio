@@ -1,6 +1,6 @@
 import React from "react";
 
-const Section = ({ children, title }: { title: string; children: React.ReactNode }) => {
+const Section = ({ children, title }: { title?: string; children: React.ReactNode }) => {
   return (
     <div className="flex flex-col gap-y-4">
       {/* {title && <h2 className="text-2xl font-bold tracking-tight">{title}.</h2>} */}

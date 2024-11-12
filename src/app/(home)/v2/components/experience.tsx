@@ -4,10 +4,8 @@ import Link from "next/link";
 import LinkIcon from "@svgs/link.svg";
 import Section from "@/components/custom/section";
 import { companyLogos } from "@/utils/icons";
-import useMediaQuery from "@/hooks/use-media-query";
 
 const Experience = () => {
-  const isPhone = useMediaQuery("(max-width: 600px)");
   return (
     <Section title="Experience">
       {data.experience.map(exp => {
@@ -23,7 +21,7 @@ const Experience = () => {
               </Link>
               <div className="text-sm/tight [grid-area:2/1/3/2]">{exp.role}</div>
               <div className="text-sm text-gray-500 md:content-center md:[grid-area:1/2/3/3]">
-                {formatDateRange({ startDate: exp.startDate, endDate: exp.endDate, isPhone })}
+                {formatDateRange({ startDate: exp.startDate, endDate: exp.endDate })}
               </div>
             </div>
           </div>
@@ -33,22 +31,9 @@ const Experience = () => {
   );
 };
 
-export const formatDateRange = ({
-  startDate,
-  endDate,
-  isPhone
-}: {
-  startDate: string;
-  endDate?: string;
-  isPhone: boolean;
-}): string => {
+export const formatDateRange = ({ startDate, endDate }: { startDate: string; endDate?: string }): string => {
   const formatDate = (date: string) => {
     const dateObj = new Date(date);
-    if (isPhone) {
-      // Format as "MMM'YY" for phone
-      const year = dateObj.getFullYear().toString().slice(-2);
-      return dateObj.toLocaleDateString("en-US", { month: "short" }) + "'" + year;
-    }
     // Original format for larger screens
     return dateObj.toLocaleDateString("en-US", {
       month: "short",

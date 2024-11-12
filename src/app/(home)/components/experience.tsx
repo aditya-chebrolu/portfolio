@@ -13,7 +13,7 @@ const Experience = () => {
         const Icon = companyLogos[exp.logo as keyof typeof companyLogos];
         return (
           <div className="flex items-center gap-2 [&:not(:last-child)]:border-b [&:not(:last-child)]:pb-4" key={exp.company}>
-            <Icon className="aspect-square h-10 content-center" />
+            <Icon className="aspect-square h-[3rem] content-center md:h-10" />
             <div className="grid flex-1 md:grid-cols-[1fr_auto]">
               <Link href={exp.url} className="text-md/tight flex items-center gap-1 font-semibold [grid-area:1/1/2/2]">
                 <span>{exp.company}</span>

@@ -26,7 +26,7 @@ const AboutMe = () => {
   return (
     <Section>
       <p
-        className="text-md text-pretty border-l-4 pl-2 text-muted-foreground dark:text-gray-400 [&>.mark]:text-white"
+        className="text-md border-l-4 pl-2 text-justify text-muted-foreground dark:text-gray-400 [&>.mark]:text-white"
         dangerouslySetInnerHTML={{ __html: formattedText }}
       />
     </Section>

@@ -1,9 +1,7 @@
 "use client";
-
 import React from "react";
 import PageWrapper from "@/components/page-wrapper";
 import Title from "@/components/title";
-// import { companyLogos } from "@/utils/company-logo";
 import experience from "@/data/experience.json";
 import { useParams } from "next/navigation";
 import Spacer from "@/components/spacer";
@@ -12,13 +10,12 @@ type ExperienceDataType = (typeof experience)[keyof typeof experience];
 const ExperiencePage = () => {
   const { company } = useParams();
   const data = experience[company as keyof typeof experience];
-  // const Icon = companyLogos[data.logo as keyof typeof companyLogos];
 
   return (
     <PageWrapper>
       <div>
         <div className="text-muted-foreground dark:text-gray-400">My Experience @</div>
-        <Title className="text-black dark:text-white">{data.company}</Title>
+        <Title className="text-black dark:text-white">{data.name}</Title>
       </div>
       <div
         className="text-md text-pretty border-l-4 pl-2 text-muted-foreground dark:text-gray-400 [&>_.highlight]:text-black dark:[&>_.highlight]:text-white"

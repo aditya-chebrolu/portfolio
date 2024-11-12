@@ -1,7 +1,7 @@
 {
   "bfhl": {
     "logo": "bajaj",
-    "company": "Bajaj Finserv Health",
+    "name": "Bajaj Finserv Health",
     "shortName": "Bajaj Finserv Health",
     "description": "During my time at Bajaj Finserv Health, I've worked extensively with <span class=\"highlight\">React</span> and <span class=\"highlight\">Next.js</span> for frontend, <span class=\"highlight\">NestJS</span> for backend, and <span class=\"highlight\">TypeScript</span> as the primary language. I've also gained hands-on experience with <span class=\"highlight\">Docker</span>, <span class=\"highlight\">Kubernetes</span>, and <span class=\"highlight\">ELK</span> stack.",
     "points": [
@@ -27,13 +27,43 @@
       "20. Written <span class=\"highlight blue\">clean</span>, <span class=\"highlight blue\">efficient</span>, and <span class=\"highlight blue\">maintainable</span> code.",
       "21. Written <span class=\"highlight blue\">test cases 😵</span>.",
       "22. <span class=\"highlight blue\">Fun 🎉</span>."
-    ]
+    ],
+    "meta": {
+      "keywords": [
+        "Bajaj Finserv Health",
+        "React",
+        "Next.js",
+        "NestJS",
+        "TypeScript",
+        "Docker",
+        "Kubernetes",
+        "ELK stack",
+        "microservices",
+        "micro frontends",
+        "Strapi",
+        "MongoDB",
+        "CI/CD pipelines",
+        "caching strategies",
+        "defensive coding",
+        "technical discussions",
+        "code reviews",
+        "mentorship",
+        "product collaboration",
+        "debugging",
+        "cron jobs",
+        "clean code",
+        "test cases"
+      ]
+    }
   },
   "amgen": {
     "logo": "amgen",
-    "company": "Amgen",
+    "name": "Amgen",
     "shortName": "Amgen",
     "description": "At Amgen, I was a <span class=\"highlight\">React</span> developer, working on the <span class=\"highlight\">Amgen.com</span> website.",
-    "points": []
+    "points": [],
+    "meta": {
+      "keywords": []
+    }
   }
 }

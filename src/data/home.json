@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Aditya Chebrolu",
+    "title": "Aditya Chebrolu | Software Developer",
     "description": "Discover the portfolio of Aditya Chebrolu, an experienced Full Stack Developer specializing in web development projects, showcasing skills, expertise, and accomplishments.",
     "keywords": "portfolio, Aditya Chebrolu, Full Stack Developer, web development, projects, skills"
   },
@@ -11,7 +11,7 @@
       "startDate": "2024-12-05",
       "url": "/experience/amgen",
       "logo": "amgen",
-      "display": true
+      "display": false
     },
     {
       "company": "Bajaj Finserv Health",

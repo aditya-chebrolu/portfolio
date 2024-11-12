@@ -10,7 +10,7 @@ const Skills = () => {
         {Object.values(icons).map(icon => {
           const { Icon, name } = icon;
           return (
-            <div key={icon.name} className="flex items-center gap-1">
+            <div key={icon.name} className="flex gap-1">
               <Icon className="h-[14px] w-[14px] fill-black dark:fill-white" />
               <span className="text-sm">{name}</span>
             </div>

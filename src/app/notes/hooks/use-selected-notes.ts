@@ -1,5 +1,5 @@
 import { ChangeEvent, useRef, useState } from "react";
-import { DataObject } from "../page";
+import { DataObject } from "../not-page";
 import Fuse from "fuse.js";
 
 const useSelectedNotes = (notes: DataObject[]) => {
@@ -12,7 +12,7 @@ const useSelectedNotes = (notes: DataObject[]) => {
       keys: ["title", "tags"],
       ignoreLocation: true,
       threshold: 0,
-      minMatchCharLength: 3,
+      minMatchCharLength: 3
     })
   );
 
@@ -26,8 +26,8 @@ const useSelectedNotes = (notes: DataObject[]) => {
       return;
     }
     setSelectedNotes(
-      notes.filter((note) => {
-        return note.tags.some((t) => selectedTags.current.has(t));
+      notes.filter(note => {
+        return note.tags.some(t => selectedTags.current.has(t));
       })
     );
   };
@@ -40,7 +40,7 @@ const useSelectedNotes = (notes: DataObject[]) => {
       setSelectedNotes(notes);
     } else {
       const results = fuse.current.search(e.target.value);
-      setSelectedNotes(results.map((result) => result.item));
+      setSelectedNotes(results.map(result => result.item));
     }
     setSearch(e.target.value);
   };
@@ -50,7 +50,7 @@ const useSelectedNotes = (notes: DataObject[]) => {
     toggleTag,
     selectedTags: selectedTags.current,
     onSearch,
-    search,
+    search
   };
 };
 

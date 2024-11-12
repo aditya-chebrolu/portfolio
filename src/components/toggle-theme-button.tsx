@@ -10,6 +10,8 @@ const ToggleThemeButton = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
+  if (!theme) return null;
+
   return (
     <div className="fixed bottom-4 right-4" onClick={toggleTheme}>
       {theme === "dark" ? <SunIcon className="h-[30px] w-[30px]" /> : <MoonIcon className="h-[30px] w-[30px]" />}

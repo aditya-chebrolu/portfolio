@@ -15,16 +15,16 @@ const Experience = () => {
         const Icon = companyLogos[exp.logo as keyof typeof companyLogos];
         return (
           <div className="flex items-center gap-2 [&:not(:last-child)]:border-b [&:not(:last-child)]:pb-4" key={exp.company}>
-            <Icon className="aspect-square h-10" />
-            <div className="flex flex-col">
-              <Link href={exp.url} className="text-md/tight flex items-center gap-1 font-semibold">
+            <Icon className="aspect-square h-14 content-center md:h-10" />
+            <div className="grid flex-1 md:grid-cols-[1fr_auto]">
+              <Link href={exp.url} className="text-md/tight flex items-center gap-1 font-semibold [grid-area:1/1/2/2]">
                 <span>{exp.company}</span>
                 <LinkIcon className="h-4 w-4 stroke-black dark:stroke-white" />
               </Link>
-              <div className="text-sm/tight">{exp.role}</div>
-            </div>
-            <div className="ml-auto text-sm text-gray-500">
-              {formatDateRange({ startDate: exp.startDate, endDate: exp.endDate, isPhone })}
+              <div className="text-sm/tight [grid-area:2/1/3/2]">{exp.role}</div>
+              <div className="text-sm text-gray-500 md:content-center md:[grid-area:1/2/3/3]">
+                {formatDateRange({ startDate: exp.startDate, endDate: exp.endDate, isPhone })}
+              </div>
             </div>
           </div>
         );

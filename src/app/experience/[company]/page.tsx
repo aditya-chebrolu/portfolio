@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import PageWrapper from "@/components/custom/page-wrapper";
-import Title from "@/components/custom/title";
+import PageWrapper from "@/components/page-wrapper";
+import Title from "@/components/title";
 // import { companyLogos } from "@/utils/company-logo";
 import experience from "@/data/experience.json";
 import { useParams } from "next/navigation";
-import Spacer from "@/components/custom/spacer";
+import Spacer from "@/components/spacer";
 type ExperienceDataType = (typeof experience)[keyof typeof experience];
 
 const ExperiencePage = () => {

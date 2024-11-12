@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Source_Sans_3 } from "next/font/google";
 import "../styles/globals.css";
 import { ThemeProvider } from "@providers/theme-provider";
-import ToggleThemeButton from "@/components/custom/toggle-theme-button";
+import ToggleThemeButton from "@/components/toggle-theme-button";
 
 const inter = Inter({
   subsets: ["latin"],

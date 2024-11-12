@@ -2,8 +2,8 @@ import path from "path";
 import fs from "fs";
 import React from "react";
 import Content from "./components/content";
-import PageWrapper from "@/components/custom/page-wrapper";
-import Title from "@/components/custom/title";
+import PageWrapper from "@/components/page-wrapper";
+import Title from "@/components/title";
 
 export type DataObject = {
   title: string;

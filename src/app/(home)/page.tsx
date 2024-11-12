@@ -1,12 +1,40 @@
-"use client";
-
 import PageWrapper from "@/components/page-wrapper";
+import data from "@data/home.json";
 import Title from "@/components/title";
 import Contact from "./components/contact";
 import Experience from "./components/experience";
 import Skills from "./components/skills";
 import Spacer from "@/components/spacer";
-export default function HomeV2() {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: data.meta.title,
+  description: data.meta.description,
+  keywords: data.meta.keywords,
+  authors: [{ name: "Aditya Chebrolu" }],
+  robots: { index: true, follow: true },
+  viewport: {
+    width: "device-width",
+    initialScale: 1.0,
+    maximumScale: 1.0,
+    userScalable: false
+  },
+  openGraph: {
+    title: data.meta.title,
+    description: data.meta.description,
+    type: "website"
+  },
+  appleWebApp: {
+    capable: true,
+    title: "AC Portfolio",
+    statusBarStyle: "black"
+  },
+  alternates: {
+    canonical: "https://www.adityachebrolu.com"
+  }
+};
+
+export default function Home() {
   return (
     <PageWrapper>
       <Title>hi! i&apos;m aditya &nbsp;👋</Title>

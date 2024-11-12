@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Section from "@/components/section";
 import { icons } from "@/utils/icons";

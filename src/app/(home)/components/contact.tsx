@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import In from "@svgs/social/in.svg";
 import Github from "@svgs/social/github.svg";

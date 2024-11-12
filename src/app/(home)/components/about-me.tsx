@@ -21,12 +21,12 @@ const calculateExperience = () => {
 
 const AboutMe = () => {
   const experience = calculateExperience();
-  const formattedText = `I’m a <span class="mark">software developer</span> with <span class="mark bold font-medium !text-blue-500">${experience} of experience</span> in both <span class="mark">front-end</span> and <span class="mark">back-end technologies</span>, passionate about crafting <span class="mark">clean</span>, <span class="mark">efficient code</span>. Currently, I’m exploring the power of <span class="mark">AI</span> to <span class="mark">enhance my projects</span> and staying at the forefront of <span class="mark">industry trends</span>.`;
+  const formattedText = `I’m a <span class="mark">software developer</span> with <span class="font-medium text-blue-700 dark:text-blue-500">${experience} of experience</span> in both <span class="mark">front-end</span> and <span class="mark">back-end technologies</span>, passionate about crafting <span class="mark">clean</span>, <span class="mark">efficient code</span>. Currently, I’m exploring the power of <span class="mark">AI</span> to <span class="mark">enhance my projects</span> and staying at the forefront of <span class="mark">industry trends</span>.`;
 
   return (
     <Section>
       <p
-        className="text-md border-l-4 pl-2 text-justify text-muted-foreground dark:text-gray-400 [&>.mark]:text-white"
+        className="text-md border-l-4 pl-2 text-justify text-muted-foreground dark:text-gray-400 [&>.mark]:text-black dark:[&>.mark]:text-white"
         dangerouslySetInnerHTML={{ __html: formattedText }}
       />
     </Section>

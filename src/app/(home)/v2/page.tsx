@@ -5,12 +5,14 @@ import Title from "@/components/custom/title";
 import Contact from "./components/contact";
 import Experience from "./components/experience";
 import Skills from "./components/skills";
+import Spacer from "@/components/custom/spacer";
 export default function HomeV2() {
   return (
     <PageWrapper>
       <Title>hi! i&apos;m aditya &nbsp;👋</Title>
       <Experience />
       <Skills />
+      <Spacer h={50} />
       <Contact />
       <a
         href="/resume.pdf"
@@ -19,6 +21,7 @@ export default function HomeV2() {
       >
         resume
       </a>
+      <Spacer h={150} />
     </PageWrapper>
   );
 }

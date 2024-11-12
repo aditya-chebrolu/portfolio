@@ -1,3 +1,4 @@
+"use client";
 import data from "@/data/home.json";
 import Link from "next/link";
 import LinkIcon from "@svgs/link.svg";

@@ -8,7 +8,7 @@ import data from "@/data/home/contact.json";
 
 const Contact = () => {
   return (
-    <div className="flex justify-center gap-6 [&_svg:hover]:scale-150 [&_svg]:h-[25px] [&_svg]:w-[25px] [&_svg]:fill-black [&_svg]:transition-transform [&_svg]:duration-100 dark:[&_svg]:fill-white">
+    <div className="flex justify-center gap-6 [&_svg:hover]:scale-150 [&_svg]:h-[25px] [&_svg]:w-[25px] [&_svg]:fill-black [&_svg]:transition-transform [&_svg]:duration-200 dark:[&_svg]:fill-white">
       <Link href={data.linkedin}>
         <In />
       </Link>

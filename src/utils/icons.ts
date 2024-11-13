@@ -17,8 +17,11 @@ import spring from "@svgs/tech/light/spring.svg";
 import tailwind from "@svgs/tech/light/tailwind.svg";
 import typescript from "@svgs/tech/light/typescript.svg";
 
-import BajajIcon from "@svgs/bajaj.svg";
-import AmgenIcon from "@svgs/amgen.svg";
+// import BajajIcon from "@svgs/bajaj.svg";
+// import AmgenIcon from "@svgs/amgen.svg";
+
+import BajajLogo from "@assets/bajaj.png";
+import AmgenLogo from "@assets/amgen.jpeg";
 
 export const icons = {
   // Programming Languages
@@ -123,6 +126,6 @@ export const shellScripting = (["bash"] as (keyof typeof icons)[]).map(k => icon
 export const technologies = Object.values(icons) as { Icon: React.ElementType; DarkIcon?: React.ElementType; name: string }[];
 
 export const companyLogos = {
-  bajaj: BajajIcon,
-  amgen: AmgenIcon
+  bajaj: BajajLogo,
+  amgen: AmgenLogo
 };

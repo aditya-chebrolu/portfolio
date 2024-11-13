@@ -5,6 +5,7 @@ import LinkIcon from "@svgs/link.svg";
 import Section from "@/components/section";
 import { companyLogos } from "@/utils/icons";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const Experience = () => {
   const { push } = useRouter();
@@ -12,14 +13,17 @@ const Experience = () => {
     <Section title="Experience">
       {data.map(exp => {
         if (!exp.display) return null;
-        const Icon = companyLogos[exp.logo as keyof typeof companyLogos];
+        const logo = companyLogos[exp.logo as keyof typeof companyLogos];
         return (
           <div
             className="flex cursor-pointer items-center gap-2 [&:not(:last-child)]:border-b [&:not(:last-child)]:pb-4"
             key={exp.company}
             onClick={() => push(exp.url)}
           >
-            <Icon className="aspect-square h-[3rem] content-center md:h-10" />
+            {/* <Icon className="aspect-square h-[3rem] content-center md:h-10" /> */}
+            <div className="relative aspect-square h-[3rem] md:h-10">
+              <Image src={logo} alt="ok" />
+            </div>
             <div className="grid flex-1 md:grid-cols-[1fr_auto]">
               <Link href={exp.url} className="text-md flex items-center gap-1 font-semibold [grid-area:1/1/2/2]">
                 <span>{exp.company}</span>

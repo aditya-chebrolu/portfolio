@@ -16,7 +16,7 @@ const Experience = () => {
         const logo = companyLogos[exp.logo as keyof typeof companyLogos];
         return (
           <div
-            className="flex cursor-pointer items-center gap-2 [&:not(:last-child)]:border-b [&:not(:last-child)]:pb-4"
+            className="flex cursor-pointer items-center gap-2 [&:hover_svg]:rotate-180 [&:not(:last-child)]:border-b [&:not(:last-child)]:pb-4"
             key={exp.company}
             onClick={() => push(exp.url)}
           >
@@ -27,7 +27,7 @@ const Experience = () => {
             <div className="grid flex-1 md:grid-cols-[1fr_auto]">
               <Link href={exp.url} className="text-md flex items-center gap-1 font-semibold [grid-area:1/1/2/2]">
                 <span>{exp.company}</span>
-                <LinkIcon className="h-4 w-4 stroke-black dark:stroke-white" />
+                <LinkIcon className="ikon h-4 w-4 stroke-black duration-200 dark:stroke-white" />
               </Link>
               <div className="text-sm [grid-area:2/1/3/2]">{exp.role}</div>
               <div className="text-sm text-gray-500 md:content-center md:[grid-area:1/2/3/3]">

@@ -23,6 +23,10 @@ import typescript from "@svgs/tech/light/typescript.svg";
 import BajajLogo from "@assets/bajaj.png";
 import AmgenLogo from "@assets/amgen.jpeg";
 
+import LinkedinIcon from "@svgs/social/in.svg";
+import MailIcon from "@svgs/social/gmail.svg";
+import GithubIcon from "@svgs/social/github.svg";
+
 export const icons = {
   // Programming Languages
   javascript: {
@@ -128,4 +132,10 @@ export const technologies = Object.values(icons) as { Icon: React.ElementType; D
 export const companyLogos = {
   bajaj: BajajLogo,
   amgen: AmgenLogo
+};
+
+export const socialLogos = {
+  linkedin: LinkedinIcon,
+  github: GithubIcon,
+  mail: MailIcon
 };

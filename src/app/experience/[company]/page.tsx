@@ -4,7 +4,6 @@ import PageWrapper from "@/components/page-wrapper";
 import Title from "@/components/title";
 import experience from "@/data/experience.json";
 import { useParams } from "next/navigation";
-import Spacer from "@/components/spacer";
 type ExperienceDataType = (typeof experience)[keyof typeof experience];
 
 const ExperiencePage = () => {
@@ -22,7 +21,6 @@ const ExperiencePage = () => {
         dangerouslySetInnerHTML={{ __html: data.description }}
       />
       <ExperiencePoints data={data} />
-      <Spacer h={100} />
     </PageWrapper>
   );
 };

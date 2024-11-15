@@ -1,5 +1,5 @@
 import { ChangeEvent, useRef, useState } from "react";
-import { DataObject } from "../not-page";
+import { DataObject } from "../page";
 import Fuse from "fuse.js";
 
 const useSelectedNotes = (notes: DataObject[]) => {

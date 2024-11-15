@@ -66,7 +66,8 @@ const config: Config = {
   plugins: [
     require("tailwindcss-animate"),
     plugin(function ({ addVariant }) {
-      addVariant("has-sibling-hover", "&:has(~ *:hover)"); // Define the custom variant
+      addVariant("has-hover-sibling", "&:has(~ *:hover)"); // Define the custom variant
+      addVariant("hover-has-sibling", "&:hover~*");
     })
   ]
 };

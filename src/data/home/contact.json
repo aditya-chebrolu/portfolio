@@ -1,5 +1,9 @@
-{
-  "linkedin": "https://www.linkedin.com/in/adityachebrolu",
-  "github": "https://github.com/aditya-chebrolu",
-  "mail": "mailto:mail@adityachebrolu.com"
-}
+[
+  {
+    "label": "linkedin",
+    "url": "https://www.linkedin.com/in/adityachebrolu"
+  },
+  { "label": "mail", "url": "mailto:mail@adityachebrolu.com" },
+  { "label": "github", "url": "https://github.com/aditya-chebrolu" },
+  { "label": "resume", "url": "/resume.pdf" }
+]

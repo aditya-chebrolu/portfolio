@@ -37,13 +37,13 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <PageWrapper>
+    <PageWrapper className="mb-10">
       <Title>hi! i&apos;m aditya &nbsp;👋</Title>
       <AboutMe />
       <Experience />
       <Skills />
-      <Spacer h={50} />
-      <Contact />
+      {/* <Spacer h={50} /> */}
+      {/* <Contact /> */}
       <a
         href="/resume.pdf"
         target="_blank"
@@ -51,7 +51,6 @@ export default function Home() {
       >
         resume
       </a>
-      <Spacer h={150} />
     </PageWrapper>
   );
 }

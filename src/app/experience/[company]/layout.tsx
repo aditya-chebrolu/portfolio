@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: { params: any }): Promise<Met
   const res = data[key as keyof typeof data];
 
   return {
-    title: `Experience at ${res.name}`,
+    title: `Aditya Chebrolu | Experience at ${res.name}`,
     description: `An in-depth look at my work and accomplishments at ${res.name}, highlighting key projects and my contributions to the team.`,
     keywords: res.meta.keywords,
     openGraph: {

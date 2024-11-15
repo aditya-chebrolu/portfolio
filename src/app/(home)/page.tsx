@@ -40,8 +40,6 @@ export default function Home() {
       <AboutMe />
       <Experience />
       <Skills />
-      {/* <Spacer h={50} /> */}
-      {/* <Contact /> */}
       <a
         href="/resume.pdf"
         target="_blank"

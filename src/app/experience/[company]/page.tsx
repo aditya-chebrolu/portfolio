@@ -17,7 +17,7 @@ const ExperiencePage = () => {
         <Title className="text-black dark:text-white">{data.name}</Title>
       </div>
       <div
-        className="text-md] text-pretty border-l-4 pl-2 text-muted-foreground dark:text-gray-400 [&>_.highlight]:text-black dark:[&>_.highlight]:text-white"
+        className="text-md text-pretty border-l-4 pl-2 text-muted-foreground dark:text-gray-400 [&>_.highlight]:text-black dark:[&>_.highlight]:text-white"
         dangerouslySetInnerHTML={{ __html: data.description }}
       />
       <ExperiencePoints data={data} />

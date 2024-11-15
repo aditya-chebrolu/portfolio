@@ -1,10 +1,8 @@
 import PageWrapper from "@/components/page-wrapper";
 import meta from "@data/home/meta.json";
 import Title from "@/components/title";
-import Contact from "./components/contact";
 import Experience from "./components/experience";
 import Skills from "./components/skills";
-import Spacer from "@/components/spacer";
 import { Metadata } from "next";
 import AboutMe from "./components/about-me";
 

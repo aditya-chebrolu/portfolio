@@ -1,4 +1,5 @@
-import routes from "./src/data/experience.json";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const routes = require("./src/data/home/experience.json");
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
@@ -6,7 +7,6 @@ module.exports = {
   generateRobotsTxt: true,
   changefreq: "monthly",
   additionalPaths: async () => {
-    // Filter the routes from JSON file where display is true
     const additionalRoutes = routes
       .filter(route => route.display) // Only include URLs where `display` is true
       .map(route => ({
@@ -14,8 +14,6 @@ module.exports = {
         changefreq: "monthly", // Optional: Set specific changefreq for these paths
         priority: 0.8 // Optional: Set priority for these paths
       }));
-
-    // Return the additional paths
-    return additionalRoutes.map(route => route.loc);
+    return additionalRoutes;
   }
 };

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DataObject } from "../page";
+import { DataObject } from "../not-page";
 
 const Notes = ({ notes }: { notes: DataObject[]; selectedTags: Set<string>; toggleTag: (tag: string) => () => void }) => {
   return (

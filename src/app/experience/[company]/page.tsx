@@ -30,7 +30,10 @@ const ExperiencePoints = ({ data }: { data: ExperienceDataType }) => {
     <div className="flex flex-col gap-3">
       <div className="text-xl font-semibold dark:text-white">At {data.shortName}, I have...</div>
       {data.stuffDone.map(obj => (
-        <div className="flex flex-col gap-2" key={obj.title}>
+        <div
+          className="flex flex-col gap-2 border-gray-300 pb-3 dark:border-[#343434] [&:not(:last-child)]:border-b"
+          key={obj.title}
+        >
           <h2 className="text-sm font-semibold uppercase dark:text-white">{obj.title}</h2>
           {obj.points.map((point, index) => (
             <div

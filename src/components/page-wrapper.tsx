@@ -23,7 +23,7 @@ const PageWrapper = ({
         {children}
       </main>
       {showFooter && (
-        <footer className="dark:bg-[#0F0F0F mt-auto flex flex-col items-center gap-1 border-t bg-accent py-[40px] text-sm dark:border-[#343434]">
+        <footer className="mt-auto flex flex-col items-center gap-1 border-t bg-accent py-[40px] text-sm dark:border-[#343434] dark:bg-[#0F0F0F]">
           <div>Aditya Chebrolu</div>
           <div className="border-b pb-4 text-xs">Hyderabad, Telangana, India, 500085</div>
           <div className="mt-2 flex gap-4">

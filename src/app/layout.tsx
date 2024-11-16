@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} ${sourceSans.variable} no-scrollbar antialiased`}>
+      <body className={`${inter.className} ${sourceSans.variable} no-scrollbar flex min-h-screen flex-col antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
           <ToggleThemeButton />

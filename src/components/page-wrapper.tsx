@@ -23,7 +23,7 @@ const PageWrapper = ({
         {children}
       </main>
       {showFooter && (
-        <footer className="flex flex-col items-center gap-1 border-t bg-accent py-[40px] text-sm dark:border-[#343434] dark:bg-[#0F0F0F]">
+        <footer className="dark:bg-[#0F0F0F mt-auto flex flex-col items-center gap-1 border-t bg-accent py-[40px] text-sm dark:border-[#343434]">
           <div>Aditya Chebrolu</div>
           <div className="border-b pb-4 text-xs">Hyderabad, Telangana, India, 500085</div>
           <div className="mt-2 flex gap-4">
@@ -31,7 +31,7 @@ const PageWrapper = ({
               <Link
                 key={obj.label}
                 href={obj.url}
-                className="dark:hover-has-sibling:text-gray-400/50 dark:has-hover-sibling:text-gray-400/50 has-hover-sibling:text-muted-foreground/50 hover-has-sibling:text-muted-foreground/50 cursor-pointer text-muted-foreground duration-200 hover:scale-110 hover:text-black hover:underline dark:text-gray-400 dark:hover:text-white"
+                className="cursor-pointer text-muted-foreground duration-200 hover:scale-110 hover:text-black hover:underline has-hover-sibling:text-muted-foreground/50 hover-has-sibling:text-muted-foreground/50 dark:text-gray-400 dark:hover:text-white dark:has-hover-sibling:text-gray-400/50 dark:hover-has-sibling:text-gray-400/50"
               >
                 {obj.label}
               </Link>

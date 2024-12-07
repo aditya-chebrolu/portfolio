@@ -16,7 +16,7 @@ const ExperiencePage = () => {
       <div>
         <div className="text-muted-foreground dark:text-gray-400">My Experience @</div>
         <TitleWithImage
-          image={{ src: logo, alt: data.name, className: "relative aspect-square h-[32px] md:h-[44px] align-text-middle" }}
+          image={{ src: logo, alt: data.name, className: "relative aspect-square h-[31.5px] md:h-[44px] align-text-middle" }}
         >
           {data.name}
         </TitleWithImage>

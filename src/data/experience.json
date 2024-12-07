@@ -70,5 +70,15 @@
         "test cases"
       ]
     }
+  },
+  "amgen": {
+    "logo": "amgen",
+    "name": "Amgen",
+    "shortName": "Amgen",
+    "description": "I'm currently working at Amgen as an <span class=\"highlight\">Associate Software Engineer</span>. I'll be working as a <span class=\"highlight\">UI Developer</span>.",
+    "stuffDone": [],
+    "meta": {
+      "keywords": ["Amgen", "Associate Software Engineer", "UI Developer"]
+    }
   }
 }

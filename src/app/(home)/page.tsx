@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <PageWrapper className="mb-10">
-      <Title>hi! i&apos;m aditya &nbsp;👋</Title>
+      <Title>hi, i&apos;m aditya &nbsp;👋</Title>
       <AboutMe />
       <Experience />
       <Skills />

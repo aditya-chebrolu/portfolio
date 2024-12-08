@@ -15,7 +15,7 @@ const TitleWithImage = ({
 }) => {
   return (
     <div>
-      <div className={cn("mr-1.5 inline-block align-[-1px] md:mr-2", image.className)}>
+      <div className={cn("mr-1.5 inline-block align-[-0.5px] md:mr-2", image.className)}>
         <Image src={image.src} alt={image.alt} className={image.className} />
       </div>
       <h1 className={cn("inline text-[2.7rem] font-extrabold leading-tight tracking-tight md:text-6xl", titleClassName)}>

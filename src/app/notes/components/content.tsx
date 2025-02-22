@@ -1,5 +1,5 @@
 "use client";
-import { DataObject } from "../not-page";
+import { DataObject } from "../page";
 import useSelectedNotes from "../hooks/use-selected-notes";
 import AllTags from "./all-tags";
 import Notes from "./notes";

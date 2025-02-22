@@ -2,7 +2,6 @@ import PageWrapper from "@/components/page-wrapper";
 import meta from "@data/home/meta.json";
 import Title from "@/components/title";
 import Experience from "./components/experience";
-import Skills from "./components/skills";
 import { Metadata } from "next";
 import AboutMe from "./components/about-me";
 
@@ -39,11 +38,10 @@ export default function Home() {
       <Title>hi, i&apos;m aditya &nbsp;👋</Title>
       <AboutMe />
       <Experience />
-      <Skills />
       <a
         href="/resume.pdf"
         target="_blank"
-        className="mx-auto w-fit bg-black px-5 py-2 text-center text-sm font-medium text-white transition-all duration-200 hover:scale-110 dark:bg-white dark:text-black"
+        className="mx-auto mt-[100px] w-fit bg-black px-5 py-2 text-center text-sm font-medium text-white transition-all duration-200 hover:scale-110 dark:bg-white dark:text-black"
       >
         resume
       </a>

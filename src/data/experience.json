@@ -3,6 +3,20 @@
     "logo": "bajaj",
     "name": "Bajaj Finserv Health",
     "shortName": "Bajaj Finserv Health",
+    "skills": [
+      "javascript",
+      "typescript",
+      "html",
+      "css",
+      "reactjs",
+      "nextjs",
+      "nestjs",
+      "tailwind",
+      "mongodb",
+      "redis",
+      "docker",
+      "kubernetes"
+    ],
     "description": "During my time at Bajaj Finserv Health, I've worked extensively with <span class=\"highlight\">React</span> and <span class=\"highlight\">Next.js</span> for frontend, <span class=\"highlight\">NestJS</span> for backend, and <span class=\"highlight\">TypeScript</span> as the primary language. I've also gained hands-on experience with <span class=\"highlight\">Docker</span>, <span class=\"highlight\">Kubernetes</span>, and <span class=\"highlight\">ELK</span> stack.",
     "stuffDone": [
       {
@@ -75,7 +89,21 @@
     "logo": "amgen",
     "name": "Amgen",
     "shortName": "Amgen",
-    "description": "I'm currently working at <span class=\"highlight\">Amgen</span> as a <span class=\"highlight\">UI Developer</span>.",
+    "skills": [
+      "python",
+      "kubernetes",
+      "docker",
+      "reactjs",
+      "html",
+      "css",
+      "postgresql",
+      "grafana",
+      "openai",
+      "dynamo",
+      "sqs",
+      "lambda"
+    ],
+    "description": "I'm currently working at <span class=\"highlight\">Amgen</span> as a <span class=\"highlight\">Full Stack Developer</span>.",
     "stuffDone": [],
     "meta": {
       "keywords": ["Amgen", "Associate Software Engineer", "UI Developer"]

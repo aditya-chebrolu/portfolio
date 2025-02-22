@@ -16,9 +16,13 @@ import redis from "@svgs/tech/light/redis.svg";
 import spring from "@svgs/tech/light/spring.svg";
 import tailwind from "@svgs/tech/light/tailwind.svg";
 import typescript from "@svgs/tech/light/typescript.svg";
-
-// import BajajIcon from "@svgs/bajaj.svg";
-// import AmgenIcon from "@svgs/amgen.svg";
+import python from "@svgs/tech/light/python.svg";
+import postgresql from "@svgs/tech/postgresql.svg";
+import grafana from "@svgs/tech/grafana.svg";
+import openai from "@svgs/tech/openai.svg";
+import dynamo from "@svgs/tech/dynamo.svg";
+import sqs from "@svgs/tech/sqs.svg";
+import lambda from "@svgs/tech/lambda.svg";
 
 import BajajLogo from "@assets/bajaj.png";
 import AmgenLogo from "@assets/amgen.jpeg";
@@ -40,6 +44,10 @@ export const icons = {
   java: {
     Icon: java,
     name: "Java"
+  },
+  python: {
+    Icon: python,
+    name: "Python"
   },
 
   // Markup and Styling Languages
@@ -93,7 +101,10 @@ export const icons = {
     Icon: redis,
     name: "Redis"
   },
-
+  postgresql: {
+    Icon: postgresql,
+    name: "PostgreSQL"
+  },
   // DevOps and Cloud
   docker: {
     Icon: docker,
@@ -112,7 +123,37 @@ export const icons = {
   bash: {
     Icon: bash,
     name: "Bash"
+  },
+  grafana: {
+    Icon: grafana,
+    name: "Grafana"
+  },
+
+  openai: {
+    Icon: openai,
+    name: "OpenAI"
+  },
+
+  //aws
+  dynamo: {
+    Icon: dynamo,
+    name: "DynamoDB"
+  },
+  sqs: {
+    Icon: sqs,
+    name: "SQS"
+  },
+  lambda: {
+    Icon: lambda,
+    name: "Lambda"
   }
+};
+
+export type SkillsType = keyof typeof icons;
+export type IconType = {
+  Icon: React.ElementType;
+  DarkIcon?: React.ElementType;
+  name: string;
 };
 
 export const languages = (["javascript", "typescript", "java"] as (keyof typeof icons)[]).map(k => icons[k]);

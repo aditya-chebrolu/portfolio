@@ -6,11 +6,13 @@ import { useParams } from "next/navigation";
 type ExperienceDataType = (typeof experience)[keyof typeof experience];
 import { companyLogos } from "@/utils/icons";
 import TitleWithImage from "@/components/title-with-image";
+import Skills from "@/components/skills";
 
 const ExperiencePage = () => {
   const { company } = useParams();
   const data = experience[company as keyof typeof experience];
   const logo = companyLogos[data.logo as keyof typeof companyLogos];
+  console.log("exp", data.skills);
   return (
     <PageWrapper>
       <div>
@@ -25,6 +27,7 @@ const ExperiencePage = () => {
         className="text-md text-pretty border-l-4 pl-2 text-muted-foreground dark:text-gray-400 [&>_.highlight]:text-black dark:[&>_.highlight]:text-white"
         dangerouslySetInnerHTML={{ __html: data.description }}
       />
+      <Skills skills={data.skills} />
       <ExperiencePoints data={data} />
     </PageWrapper>
   );

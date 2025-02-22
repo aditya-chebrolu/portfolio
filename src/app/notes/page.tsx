@@ -4,6 +4,7 @@ import React from "react";
 import Content from "./components/content";
 import PageWrapper from "@/components/page-wrapper";
 import Title from "@/components/title";
+import { fetchGitLinks } from "./services/fetch-git-details";
 
 export type DataObject = {
   title: string;
@@ -23,6 +24,9 @@ const getNotes = async () => {
 
 const NotesPage = async () => {
   const { notes, tags } = await getNotes();
+
+  const gitLinks = await fetchGitLinks();
+  console.log(gitLinks.filter(link => link.visibility === "public").map(link => link.html_url));
 
   return (
     <PageWrapper>

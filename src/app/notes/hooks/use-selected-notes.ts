@@ -34,7 +34,6 @@ const useSelectedNotes = (notes: DataObject[]) => {
 
   const onSearch = (e: ChangeEvent<HTMLInputElement>) => {
     const searchValue = e.target.value;
-    console.log(searchValue);
     selectedTags.current.clear();
     if (!searchValue) {
       setSelectedNotes(notes);

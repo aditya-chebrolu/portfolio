@@ -17,7 +17,11 @@
       "docker",
       "kubernetes"
     ],
-    "description": "During my time at Bajaj Finserv Health, I've worked extensively with <span class=\"highlight\">React</span> and <span class=\"highlight\">Next.js</span> for frontend, <span class=\"highlight\">NestJS</span> for backend, and <span class=\"highlight\">TypeScript</span> as the primary language. I've also gained hands-on experience with <span class=\"highlight\">Docker</span>, <span class=\"highlight\">Kubernetes</span>, and <span class=\"highlight\">ELK</span> stack.",
+
+    "description": [
+      "<span class='highlight'>Bajaj Finserv Health</span> is a <span class='highlight'>B2C platform</span> that enables users to book <span class='highlight'>lab tests</span>, <span class='highlight'>doctor appointments</span>, and <span class='highlight'>hospital slots</span>—both online and offline. It also facilitates <span class='highlight'>payments</span> and allows users to interact with <span class='highlight'>doctors/hospitals</span> via <span class='highlight'>chat</span> or <span class='highlight'>call</span>.",
+      "I was part of the <span class='highlight'>frontend development</span> team, where I worked on <span class='highlight'>refactoring</span>, optimizing the code, and enhancing <span class='highlight'>SEO</span>. Later, I transitioned to the <span class='highlight'>backend</span>, contributing to core features like <span class='highlight'>slot booking</span> and the <span class='highlight'>chat system</span>, while improving <span class='highlight'>performance</span> and <span class='highlight'>code quality</span>. Through this experience, I honed my skills in writing <span class='highlight'>efficient</span>, <span class='highlight'>clean</span>, and <span class='highlight'>maintainable code</span>."
+    ],
     "stuffDone": [
       {
         "title": "Frontend",
@@ -103,7 +107,9 @@
       "sqs",
       "lambda"
     ],
-    "description": "I'm currently working at <span class=\"highlight\">Amgen</span> as a <span class=\"highlight\">Full Stack Developer</span>.",
+    "description": [
+      "<span class='highlight'>Amgen</span> is a leading biotechnology company whose mission is to serve patients. The company supports its staff through numerous internal projects; currently, I am contributing to the <span class='highlight'>notifications team</span>."
+    ],
     "stuffDone": [],
     "meta": {
       "keywords": ["Amgen", "Associate Software Engineer", "UI Developer"]

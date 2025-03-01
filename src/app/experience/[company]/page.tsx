@@ -12,7 +12,6 @@ const ExperiencePage = () => {
   const { company } = useParams();
   const data = experience[company as keyof typeof experience];
   const logo = companyLogos[data.logo as keyof typeof companyLogos];
-  console.log("exp", data.skills);
   return (
     <PageWrapper>
       <div>
@@ -23,10 +22,15 @@ const ExperiencePage = () => {
           {data.name}
         </TitleWithImage>
       </div>
-      <div
-        className="text-md text-pretty border-l-4 pl-2 text-muted-foreground dark:text-gray-400 [&>_.highlight]:text-black dark:[&>_.highlight]:text-white"
-        dangerouslySetInnerHTML={{ __html: data.description }}
-      />
+      <div className="flex flex-col gap-3">
+        {data.description.map((desc, index) => (
+          <div
+            key={index}
+            className="text-md text-pretty border-l-4 pl-2 text-muted-foreground dark:text-gray-400 [&>_.highlight]:text-black dark:[&>_.highlight]:text-white"
+            dangerouslySetInnerHTML={{ __html: desc }}
+          />
+        ))}
+      </div>
       <Skills skills={data.skills} />
       <ExperiencePoints data={data} />
     </PageWrapper>

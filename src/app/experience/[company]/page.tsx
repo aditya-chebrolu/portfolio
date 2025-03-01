@@ -3,10 +3,11 @@ import React from "react";
 import PageWrapper from "@/components/page-wrapper";
 import experience from "@/data/experience.json";
 import { useParams } from "next/navigation";
-type ExperienceDataType = (typeof experience)[keyof typeof experience];
 import { companyLogos } from "@/utils/icons";
 import TitleWithImage from "@/components/title-with-image";
 import Skills from "@/components/skills";
+
+type ExperienceDataType = (typeof experience)[keyof typeof experience];
 
 const ExperiencePage = () => {
   const { company } = useParams();
@@ -26,7 +27,7 @@ const ExperiencePage = () => {
         {data.description.map((desc, index) => (
           <div
             key={index}
-            className="text-md text-pretty border-l-4 pl-2 text-muted-foreground dark:text-gray-400 [&>_.highlight]:text-black dark:[&>_.highlight]:text-white"
+            className="text-md text-pretty border-l-4 pl-2 text-muted-foreground dark:text-gray-400 [&>_.highlight]:text-black dark:[&>_.highlight]:text-white [&>a]:underline"
             dangerouslySetInnerHTML={{ __html: desc }}
           />
         ))}

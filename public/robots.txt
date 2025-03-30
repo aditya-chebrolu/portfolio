@@ -1,6 +1,8 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /dump
+Disallow: /notes
 
 # Host
 Host: https://www.adityachebrolu.com
